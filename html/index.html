@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="custom.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+    body{padding-top: 50px;}
+</style>
+<body>
+    
+<!-- Navigation -->
+<nav>
+    <ul class="top-menu">
+      <li><a class="active" href="default.asp">Home</a></li>
+      <li><a href="news.asp">News</a></li>
+      <li><a href="contact.asp">Contact</a></li>
+      <li style="float:right"><a href="about.asp">About</a></li>
+      <li><a onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+      <li style="float:right"><input type="text" name="search" placeholder="Search.."></li>
+    </ul>
+</nav>
+
+<div class="page-content" style="text-align: center;margin: 0 auto;max-width:1200px;">
+<!-- Slide Show -->
+<!-- breadcrumb -->
+<ol class="breadcrumb"> <li><a href="#">Home</a></li> <li><a href="#">Library</a></li> <li class="active">Data</li> </ol>
+        <!-- Product grid -->
+        <div class="w3-row w3-grayscale">
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <img src="w3images/jeans1.jpg" style="width:100%">
+                    <p>Ripped Skinny Jeans
+                        <br><b>$24.99</b>
+                    </p>
+                </div>
+                <div class="w3-container">
+                    <img src="w3images/jeans2.jpg" style="width:100%">
+                    <p>Mega Ripped Jeans
+                        <br><b>$19.99</b>
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                        <img src="w3images/jeans2.jpg" style="width:100%">
+                        <div class="w3-display-middle w3-display-hover">
+                            <button class="w3-btn">Buy now <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p>Mega Ripped Jeans
+                        <br><b>$19.99</b>
+                    </p>
+                </div>
+                <div class="w3-container">
+                    <img src="w3images/jeans3.jpg" style="width:100%">
+                    <p>Washed Skinny Jeans
+                        <br><b>$20.50</b>
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <img src="w3images/jeans3.jpg" style="width:100%">
+                    <p>Washed Skinny Jeans
+                        <br><b>$20.50</b>
+                    </p>
+                </div>
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                        <img src="w3images/jeans4.jpg" style="width:100%">
+                        <div class="w3-display-middle w3-display-hover">
+                            <button class="w3-btn">Buy now <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p>Vintage Skinny Jeans
+                        <br><b class="w3-text-red">$14.99</b>
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <img src="w3images/jeans4.jpg" style="width:100%">
+                    <p>Vintage Skinny Jeans
+                        <br><b>$14.99</b>
+                    </p>
+                </div>
+                <div class="w3-container">
+                    <img src="w3images/jeans1.jpg" style="width:100%">
+                    <p>Ripped Skinny Jeans
+                        <br><b>$24.99</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+<!-- Band Description -->
+
+<!-- Band Members -->
+<!-- Content -->
+
+<!-- pagination -->
+<ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a class="active" href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">6</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+
+
+
+</div> 
+<!-- end page-content -->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+</body>
+</html>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
