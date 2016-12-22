@@ -3,3 +3,8 @@ C:\Users\HaiPC\Documents\GitHub\Assignments_Large\Web_Sales\Web_Sales\bin\Web_Sa
 C:\Users\HaiPC\Documents\GitHub\Assignments_Large\Web_Sales\Web_Sales\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\HaiPC\Documents\GitHub\Assignments_Large\Web_Sales\Web_Sales\obj\Debug\Web_Sales.dll
 C:\Users\HaiPC\Documents\GitHub\Assignments_Large\Web_Sales\Web_Sales\obj\Debug\Web_Sales.pdb
+C:\Users\HaiPC\Documents\GitHub\Web_Sales\Web_Sales\bin\Web_Sales.dll
+C:\Users\HaiPC\Documents\GitHub\Web_Sales\Web_Sales\bin\Web_Sales.pdb
+C:\Users\HaiPC\Documents\GitHub\Web_Sales\Web_Sales\obj\Debug\Web_Sales.csprojResolveAssemblyReference.cache
+C:\Users\HaiPC\Documents\GitHub\Web_Sales\Web_Sales\obj\Debug\Web_Sales.dll
+C:\Users\HaiPC\Documents\GitHub\Web_Sales\Web_Sales\obj\Debug\Web_Sales.pdb

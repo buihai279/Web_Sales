@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="home.master.cs" Inherits="Web_Sales.home" %>
+<!DOCTYPE html>
+<html>
+<head id="Head1" runat="server">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/w3.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> -->
+    <style>
+        body{padding-top: 50px;}
+    </style>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!-- Navigation -->
+    <nav>
+        <ul class="top-menu">
+            <%
+            System.Data.SqlClient.SqlConnection conn =
+                new System.Data.SqlClient.SqlConnection(
+                    @"Data Source=HAI-DESKTOP\SQLEXPRESS;Initial Catalog=OnlineShopping;Integrated Security=True");
+            System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand("SELECT * FROM categories", conn);
+            conn.Open();
+            System.Data.SqlClient.SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                Response.Write(string.Format("<li><a href='WebForm1.aspx?category_id={0}'</a>{1}</li>", dr[0], dr[1]));
+            }
+%>
+          <li style="float:right"><input type="text" name="search" placeholder="Search.."></li>
+        </ul>
+    </nav>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <!-- <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a> -->
+  <p class="w3-medium">
+  Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+</body>
+</html>

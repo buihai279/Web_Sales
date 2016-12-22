@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Web
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web_Sales", "Web_Sales\Web_Sales.csproj", "{48829D6C-6AFB-4A43-98AD-4AD2228D6E82}"
 EndProject
 Global
