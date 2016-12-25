@@ -36,9 +36,12 @@ namespace Web_Sales
             cmd.Parameters.AddWithValue("@CategoryID", 1);
             cmd.Parameters.AddWithValue("@Quantity", 8);
             cmd.Parameters.AddWithValue("@Price", 8);
+            SqlParameter returnParameter = cmd.Parameters.Add("RetVal", SqlDbType.Int);
+            returnParameter.Direction = ParameterDirection.ReturnValue;
             try
             {
-                cmd.ExecuteNonQuery(); 
+                cmd.ExecuteNonQuery();
+                Response.Write(returnParameter.Value);
             }
             catch (Exception ex)
             {
