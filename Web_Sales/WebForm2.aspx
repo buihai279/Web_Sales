@@ -9,27 +9,25 @@
         <div class="w3-row w3-grayscale">
             <div class="w3-col l3 s6">
              <%
-                System.Data.SqlClient.SqlConnection conn =
-                    new System.Data.SqlClient.SqlConnection(
-                        @"Data Source=HAI-DESKTOP\SQLEXPRESS;Initial Catalog=OnlineShopping;Integrated Security=True");
-                System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand("SELECT * FROM products", conn);
+                System.Data.SqlClient.SqlCommand cmd;
+                System.Data.SqlClient.SqlConnection conn;
+                System.Data.SqlClient.SqlDataReader dr;
+                conn = new System.Data.SqlClient.SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=Shop;Integrated Security=True");
                 conn.Open();
-                System.Data.SqlClient.SqlDataReader dr = cmd.ExecuteReader();
+                //System.Data.DataTable sp = new System.Data.DataTable();
+                cmd = new System.Data.SqlClient.SqlCommand("spGetProduct", conn);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                dr = cmd.ExecuteReader();
                 while (dr.Read())
-                {
-                    %>
-
+                {%>
              <div class="w3-container">
                     <img src="images/<% Response.Write(string.Format("{0}", dr[3])); %>" style="width:100%">
                     <p><% Response.Write(string.Format("{0}", dr[1])); %>
                         <br><b><% Response.Write(string.Format("{0}", dr[6])); %></b>
                     </p>
                 </div>
-            <%
-                }
-    %>
+            <%} %>
                 </div>
-               
         </div>
 <!-- Band Description -->
 <!-- Band Members -->

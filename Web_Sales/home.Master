@@ -23,7 +23,7 @@
             <%
             System.Data.SqlClient.SqlConnection conn =
                 new System.Data.SqlClient.SqlConnection(
-                    @"Data Source=HAI-DESKTOP\SQLEXPRESS;Initial Catalog=OnlineShopping;Integrated Security=True");
+                    @"Data Source=.\SQLEXPRESS;Initial Catalog=Shop;Integrated Security=True");
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand("SELECT * FROM categories", conn);
             conn.Open();
             System.Data.SqlClient.SqlDataReader dr = cmd.ExecuteReader();
@@ -37,20 +37,18 @@
     </nav>
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
         </asp:ContentPlaceHolder>
     </div>
     </form>
-
 <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
   <!-- <a href="#"><i class="fa fa-facebook-official"></i></a>
-  <a href="#"><i class="fa fa-pinterest-p"></i></a>
-  <a href="#"><i class="fa fa-twitter"></i></a>
-  <a href="#"><i class="fa fa-flickr"></i></a>
-  <a href="#"><i class="fa fa-linkedin"></i></a> -->
-  <p class="w3-medium">
-  Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-  </p>
+    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-flickr"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a> -->
+    <p class="w3-medium">
+        Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+    </p>
 </footer>
 </body>
 </html>
