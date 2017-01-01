@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="normalize.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <div class="segment_logo">
+                <a href="#"><img src="logo.png" class="logo" alt="">
+                </a>
+                <div class="search-wrap">
+                    <input type="text" name="q" autocomplete="off" value="" placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn ...">
+                    <button type="submit"><span>Tìm kiếm</span>
+                    </button>
+                </div>
+            </div>
+            <div id="header_cart" data-toggle="modalCart">
+                <span class="counter">0</span>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="main-child">
+            <div class="image-box">
+              <!-- Trigger the Modal -->
+              <img id="myImg" class="proImg" src="w3images/jeans2.jpg" alt="Trolltunga, Norway">
+
+            </div>
+            <div class="item-box"></div>
+        </div>
+      </div>
+        <!-- end box menu slide -->
+        <!-- Product grid -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- social -->
+            <div class="block-footer">
+                <h6 class="">Công ty Cổ phần Dịch vụ Thương Mại Tổng hợp VinCommerce</h6>
+                <p></p>
+                <div class="">
+                    <div style="width:30%;float: left;">
+                        <h6 class="">Trụ sở chính:</h6>
+                        <p>Số 72 Lê Thánh Tôn, Phường Bến Nghé, Quận 1,
+                            <br>Thành phố Hồ Chí Minh, Việt Nam.</p>
+                    </div>
+                    <div style="width:60%;float: left;">
+                        <h6 class="">Địa chỉ giao dịch:</h6>
+                        <div class="">
+                            <div style="width:50%;float: left;">
+                                <span class="">Tại thành phố Hồ Chí Minh:</span>
+                                <p>Tầng B1, Vincom Mega Mall Thảo Điền, 159-161 Xa Lộ Hà Nội, Phường Thảo Điền, Quận 2, Thành Phố Hồ Chí Minh.</p>
+                            </div>
+                            <div style="width:50%;float: left;">
+                                <span class="">Tại Hà Nội:</span>
+                                <p>Tower 2, Times City, 458 Minh Khai, Phường Vĩnh Tuy,
+                                    <br> Quận Hai Bà Trưng, Thành Phố Hà Nội.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both;">
+                    <div class="">
+                        <p><span class="">Điện thoại: </span>HN - (04) 39759568, HCM - (08) 39759568.<span class=""> Email:</span> <a href="mailto:cskh@adayroi.com" rel="nofollow">cskh@adayroi.com</a>.</p>
+                        <p>
+                            <span class="">Mã số doanh nghiệp: </span>0104918404 do Sở Kế hoạch và Đầu tư TP. Hà Nội cấp lần đầu ngày 20/09/2010.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+    <script src="modal-image.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
+
